@@ -1,0 +1,49 @@
+header {
+	display: flex;
+	justify-content: center;
+	background: aquamarine;
+	color: white;
+	border-radius: 15px;
+}
+
+.description {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: center;
+	align-content: center;
+	gap: 5em;
+}
+img {
+	height: 150px;
+	width: auto;
+	margin-left: 50%;
+	animation-name: calc-anim;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes calc-anim {
+	0% {
+		transform: translateX(-25px);
+		opacity: 50%;
+	}
+
+	25% {
+		transform: translateX(50px);
+	}
+
+	50% {
+		transform: translateX(-50px);
+		opacity: 100%;
+	}
+
+	75% {
+		transform: translateX(50px);
+	}
+
+	100% {
+		transform: translateX(-50px);
+		opacity: 50%;
+	}
+}
